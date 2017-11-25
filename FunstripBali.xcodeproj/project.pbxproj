@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA89EC7B1FC90A8F00C57001 /* IsiBeritaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC7A1FC90A8F00C57001 /* IsiBeritaViewController.swift */; };
+		FA89EC7D1FC90AA100C57001 /* HomeMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC7C1FC90AA100C57001 /* HomeMenuTableViewController.swift */; };
+		FA89EC7F1FC90AB400C57001 /* HomeMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC7E1FC90AB400C57001 /* HomeMenuTableViewCell.swift */; };
+		FA89EC811FC9122F00C57001 /* IsiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC801FC9122F00C57001 /* IsiDetailViewController.swift */; };
+		FA89EC831FC9123E00C57001 /* KategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC821FC9123E00C57001 /* KategoriTableViewController.swift */; };
+		FA89EC851FC9124C00C57001 /* KategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC841FC9124C00C57001 /* KategoriTableViewCell.swift */; };
+		FA89EC871FC9125A00C57001 /* BeritaKategoriTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC861FC9125A00C57001 /* BeritaKategoriTableViewController.swift */; };
+		FA89EC891FC9127300C57001 /* BeritaKategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89EC881FC9127300C57001 /* BeritaKategoriTableViewCell.swift */; };
+		FAADC13C1FC8F2B600B9A292 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADC13B1FC8F2B600B9A292 /* AppDelegate.swift */; };
+		FAADC1431FC8F2B600B9A292 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAADC1411FC8F2B600B9A292 /* Main.storyboard */; };
+		FAADC1451FC8F2B600B9A292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAADC1441FC8F2B600B9A292 /* Assets.xcassets */; };
+		FAADC1481FC8F2B600B9A292 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAADC1461FC8F2B600B9A292 /* LaunchScreen.storyboard */; };
+		FAADC1531FC8F2B700B9A292 /* FunstripBaliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADC1521FC8F2B700B9A292 /* FunstripBaliTests.swift */; };
+		FAADC15E1FC8F2B700B9A292 /* FunstripBaliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADC15D1FC8F2B700B9A292 /* FunstripBaliUITests.swift */; };
+		FB02C555B2300E765D19643C /* Pods_FunstripBali.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372CCF8FC8BF4EBA31975B56 /* Pods_FunstripBali.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAADC14F1FC8F2B700B9A292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAADC1301FC8F2B600B9A292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAADC1371FC8F2B600B9A292;
+			remoteInfo = FunstripBali;
+		};
+		FAADC15A1FC8F2B700B9A292 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAADC1301FC8F2B600B9A292 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAADC1371FC8F2B600B9A292;
+			remoteInfo = FunstripBali;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		372CCF8FC8BF4EBA31975B56 /* Pods_FunstripBali.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FunstripBali.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		820FE2261A43DD060C4E0301 /* Pods-FunstripBali.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunstripBali.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FunstripBali/Pods-FunstripBali.debug.xcconfig"; sourceTree = "<group>"; };
+		A7503EC0E4452AA274C2D7DB /* Pods-FunstripBali.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunstripBali.release.xcconfig"; path = "Pods/Target Support Files/Pods-FunstripBali/Pods-FunstripBali.release.xcconfig"; sourceTree = "<group>"; };
+		FA89EC7A1FC90A8F00C57001 /* IsiBeritaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsiBeritaViewController.swift; sourceTree = "<group>"; };
+		FA89EC7C1FC90AA100C57001 /* HomeMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewController.swift; sourceTree = "<group>"; };
+		FA89EC7E1FC90AB400C57001 /* HomeMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FA89EC801FC9122F00C57001 /* IsiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsiDetailViewController.swift; sourceTree = "<group>"; };
+		FA89EC821FC9123E00C57001 /* KategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewController.swift; sourceTree = "<group>"; };
+		FA89EC841FC9124C00C57001 /* KategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriTableViewCell.swift; sourceTree = "<group>"; };
+		FA89EC861FC9125A00C57001 /* BeritaKategoriTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewController.swift; sourceTree = "<group>"; };
+		FA89EC881FC9127300C57001 /* BeritaKategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaKategoriTableViewCell.swift; sourceTree = "<group>"; };
+		FAADC1381FC8F2B600B9A292 /* FunstripBali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunstripBali.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAADC13B1FC8F2B600B9A292 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAADC1421FC8F2B600B9A292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAADC1441FC8F2B600B9A292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAADC1471FC8F2B600B9A292 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAADC1491FC8F2B600B9A292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAADC14E1FC8F2B700B9A292 /* FunstripBaliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunstripBaliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAADC1521FC8F2B700B9A292 /* FunstripBaliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunstripBaliTests.swift; sourceTree = "<group>"; };
+		FAADC1541FC8F2B700B9A292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAADC1591FC8F2B700B9A292 /* FunstripBaliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunstripBaliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAADC15D1FC8F2B700B9A292 /* FunstripBaliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunstripBaliUITests.swift; sourceTree = "<group>"; };
+		FAADC15F1FC8F2B700B9A292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAADC1351FC8F2B600B9A292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB02C555B2300E765D19643C /* Pods_FunstripBali.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC14B1FC8F2B700B9A292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC1561FC8F2B700B9A292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		193F6C7B2FCC7250DD49A58E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				820FE2261A43DD060C4E0301 /* Pods-FunstripBali.debug.xcconfig */,
+				A7503EC0E4452AA274C2D7DB /* Pods-FunstripBali.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0602E162E9B9FA0E9113D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				372CCF8FC8BF4EBA31975B56 /* Pods_FunstripBali.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAADC12F1FC8F2B600B9A292 = {
+			isa = PBXGroup;
+			children = (
+				FAADC13A1FC8F2B600B9A292 /* FunstripBali */,
+				FAADC1511FC8F2B700B9A292 /* FunstripBaliTests */,
+				FAADC15C1FC8F2B700B9A292 /* FunstripBaliUITests */,
+				FAADC1391FC8F2B600B9A292 /* Products */,
+				193F6C7B2FCC7250DD49A58E /* Pods */,
+				E0602E162E9B9FA0E9113D9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAADC1391FC8F2B600B9A292 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAADC1381FC8F2B600B9A292 /* FunstripBali.app */,
+				FAADC14E1FC8F2B700B9A292 /* FunstripBaliTests.xctest */,
+				FAADC1591FC8F2B700B9A292 /* FunstripBaliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAADC13A1FC8F2B600B9A292 /* FunstripBali */ = {
+			isa = PBXGroup;
+			children = (
+				FAADC13B1FC8F2B600B9A292 /* AppDelegate.swift */,
+				FA89EC7A1FC90A8F00C57001 /* IsiBeritaViewController.swift */,
+				FA89EC7C1FC90AA100C57001 /* HomeMenuTableViewController.swift */,
+				FA89EC7E1FC90AB400C57001 /* HomeMenuTableViewCell.swift */,
+				FA89EC861FC9125A00C57001 /* BeritaKategoriTableViewController.swift */,
+				FA89EC881FC9127300C57001 /* BeritaKategoriTableViewCell.swift */,
+				FA89EC821FC9123E00C57001 /* KategoriTableViewController.swift */,
+				FA89EC841FC9124C00C57001 /* KategoriTableViewCell.swift */,
+				FA89EC801FC9122F00C57001 /* IsiDetailViewController.swift */,
+				FAADC1411FC8F2B600B9A292 /* Main.storyboard */,
+				FAADC1441FC8F2B600B9A292 /* Assets.xcassets */,
+				FAADC1461FC8F2B600B9A292 /* LaunchScreen.storyboard */,
+				FAADC1491FC8F2B600B9A292 /* Info.plist */,
+			);
+			path = FunstripBali;
+			sourceTree = "<group>";
+		};
+		FAADC1511FC8F2B700B9A292 /* FunstripBaliTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAADC1521FC8F2B700B9A292 /* FunstripBaliTests.swift */,
+				FAADC1541FC8F2B700B9A292 /* Info.plist */,
+			);
+			path = FunstripBaliTests;
+			sourceTree = "<group>";
+		};
+		FAADC15C1FC8F2B700B9A292 /* FunstripBaliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAADC15D1FC8F2B700B9A292 /* FunstripBaliUITests.swift */,
+				FAADC15F1FC8F2B700B9A292 /* Info.plist */,
+			);
+			path = FunstripBaliUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAADC1371FC8F2B600B9A292 /* FunstripBali */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAADC1621FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBali" */;
+			buildPhases = (
+				4820340EA4D77899CEFC6C56 /* [CP] Check Pods Manifest.lock */,
+				FAADC1341FC8F2B600B9A292 /* Sources */,
+				FAADC1351FC8F2B600B9A292 /* Frameworks */,
+				FAADC1361FC8F2B600B9A292 /* Resources */,
+				2DDCC32E531D3A71764C5D84 /* [CP] Embed Pods Frameworks */,
+				D4A1DD114FC597834A43FF7E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunstripBali;
+			productName = FunstripBali;
+			productReference = FAADC1381FC8F2B600B9A292 /* FunstripBali.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAADC14D1FC8F2B700B9A292 /* FunstripBaliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAADC1651FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBaliTests" */;
+			buildPhases = (
+				FAADC14A1FC8F2B700B9A292 /* Sources */,
+				FAADC14B1FC8F2B700B9A292 /* Frameworks */,
+				FAADC14C1FC8F2B700B9A292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAADC1501FC8F2B700B9A292 /* PBXTargetDependency */,
+			);
+			name = FunstripBaliTests;
+			productName = FunstripBaliTests;
+			productReference = FAADC14E1FC8F2B700B9A292 /* FunstripBaliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAADC1581FC8F2B700B9A292 /* FunstripBaliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAADC1681FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBaliUITests" */;
+			buildPhases = (
+				FAADC1551FC8F2B700B9A292 /* Sources */,
+				FAADC1561FC8F2B700B9A292 /* Frameworks */,
+				FAADC1571FC8F2B700B9A292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAADC15B1FC8F2B700B9A292 /* PBXTargetDependency */,
+			);
+			name = FunstripBaliUITests;
+			productName = FunstripBaliUITests;
+			productReference = FAADC1591FC8F2B700B9A292 /* FunstripBaliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAADC1301FC8F2B600B9A292 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Sam Pramudana";
+				TargetAttributes = {
+					FAADC1371FC8F2B600B9A292 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					FAADC14D1FC8F2B700B9A292 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAADC1371FC8F2B600B9A292;
+					};
+					FAADC1581FC8F2B700B9A292 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAADC1371FC8F2B600B9A292;
+					};
+				};
+			};
+			buildConfigurationList = FAADC1331FC8F2B600B9A292 /* Build configuration list for PBXProject "FunstripBali" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAADC12F1FC8F2B600B9A292;
+			productRefGroup = FAADC1391FC8F2B600B9A292 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAADC1371FC8F2B600B9A292 /* FunstripBali */,
+				FAADC14D1FC8F2B700B9A292 /* FunstripBaliTests */,
+				FAADC1581FC8F2B700B9A292 /* FunstripBaliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAADC1361FC8F2B600B9A292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAADC1481FC8F2B600B9A292 /* LaunchScreen.storyboard in Resources */,
+				FAADC1451FC8F2B600B9A292 /* Assets.xcassets in Resources */,
+				FAADC1431FC8F2B600B9A292 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC14C1FC8F2B700B9A292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC1571FC8F2B700B9A292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DDCC32E531D3A71764C5D84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FunstripBali/Pods-FunstripBali-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunstripBali/Pods-FunstripBali-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4820340EA4D77899CEFC6C56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FunstripBali-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A1DD114FC597834A43FF7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FunstripBali/Pods-FunstripBali-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAADC1341FC8F2B600B9A292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA89EC851FC9124C00C57001 /* KategoriTableViewCell.swift in Sources */,
+				FA89EC7D1FC90AA100C57001 /* HomeMenuTableViewController.swift in Sources */,
+				FA89EC891FC9127300C57001 /* BeritaKategoriTableViewCell.swift in Sources */,
+				FAADC13C1FC8F2B600B9A292 /* AppDelegate.swift in Sources */,
+				FA89EC7B1FC90A8F00C57001 /* IsiBeritaViewController.swift in Sources */,
+				FA89EC811FC9122F00C57001 /* IsiDetailViewController.swift in Sources */,
+				FA89EC7F1FC90AB400C57001 /* HomeMenuTableViewCell.swift in Sources */,
+				FA89EC871FC9125A00C57001 /* BeritaKategoriTableViewController.swift in Sources */,
+				FA89EC831FC9123E00C57001 /* KategoriTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC14A1FC8F2B700B9A292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAADC1531FC8F2B700B9A292 /* FunstripBaliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAADC1551FC8F2B700B9A292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAADC15E1FC8F2B700B9A292 /* FunstripBaliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAADC1501FC8F2B700B9A292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAADC1371FC8F2B600B9A292 /* FunstripBali */;
+			targetProxy = FAADC14F1FC8F2B700B9A292 /* PBXContainerItemProxy */;
+		};
+		FAADC15B1FC8F2B700B9A292 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAADC1371FC8F2B600B9A292 /* FunstripBali */;
+			targetProxy = FAADC15A1FC8F2B700B9A292 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAADC1411FC8F2B600B9A292 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAADC1421FC8F2B600B9A292 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAADC1461FC8F2B600B9A292 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAADC1471FC8F2B600B9A292 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAADC1601FC8F2B700B9A292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAADC1611FC8F2B700B9A292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAADC1631FC8F2B700B9A292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 820FE2261A43DD060C4E0301 /* Pods-FunstripBali.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBali/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAADC1641FC8F2B700B9A292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7503EC0E4452AA274C2D7DB /* Pods-FunstripBali.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBali/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAADC1661FC8F2B700B9A292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBaliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBaliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunstripBali.app/FunstripBali";
+			};
+			name = Debug;
+		};
+		FAADC1671FC8F2B700B9A292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBaliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBaliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunstripBali.app/FunstripBali";
+			};
+			name = Release;
+		};
+		FAADC1691FC8F2B700B9A292 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBaliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBaliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FunstripBali;
+			};
+			name = Debug;
+		};
+		FAADC16A1FC8F2B700B9A292 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LJY77F976;
+				INFOPLIST_FILE = FunstripBaliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FunstripBaliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FunstripBali;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAADC1331FC8F2B600B9A292 /* Build configuration list for PBXProject "FunstripBali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAADC1601FC8F2B700B9A292 /* Debug */,
+				FAADC1611FC8F2B700B9A292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAADC1621FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAADC1631FC8F2B700B9A292 /* Debug */,
+				FAADC1641FC8F2B700B9A292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAADC1651FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBaliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAADC1661FC8F2B700B9A292 /* Debug */,
+				FAADC1671FC8F2B700B9A292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAADC1681FC8F2B700B9A292 /* Build configuration list for PBXNativeTarget "FunstripBaliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAADC1691FC8F2B700B9A292 /* Debug */,
+				FAADC16A1FC8F2B700B9A292 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAADC1301FC8F2B600B9A292 /* Project object */;
+}

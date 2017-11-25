@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+        <array key="HiraginoMincho.ttc">
+            <string>HiraMinProN-W3</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu Kategori-->
+        <scene sceneID="yZS-JR-dhm">
+            <objects>
+                <tableViewController id="lbw-qp-zHK" customClass="KategoriTableViewController" customModule="FunstripBali" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6So-On-nd0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellKategori" rowHeight="56" id="qTk-MP-LJd" customClass="KategoriTableViewCell" customModule="FunstripBali" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qTk-MP-LJd" id="04A-Ho-iJ3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-aw-7So">
+                                            <rect key="frame" x="8" y="17" width="359" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="udU-WM-j0W"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Z71-aw-7So" firstAttribute="trailing" secondItem="04A-Ho-iJ3" secondAttribute="trailingMargin" id="P1M-zR-yGg"/>
+                                        <constraint firstItem="Z71-aw-7So" firstAttribute="leading" secondItem="04A-Ho-iJ3" secondAttribute="leadingMargin" id="VnI-oE-AN6"/>
+                                        <constraint firstItem="Z71-aw-7So" firstAttribute="top" secondItem="04A-Ho-iJ3" secondAttribute="topMargin" constant="9" id="jlK-Dw-Bo2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Z71-aw-7So" secondAttribute="bottom" constant="9.5" id="kzF-oR-KXw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelKategori" destination="Z71-aw-7So" id="AhS-Ap-9ri"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lbw-qp-zHK" id="xjg-c6-B6v"/>
+                            <outlet property="delegate" destination="lbw-qp-zHK" id="8jX-F7-mck"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Menu Kategori" id="qz9-1b-EaF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ug-eu-SHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="329.68515742128938"/>
+        </scene>
+        <!--Berita Kategori Table View Controller-->
+        <scene sceneID="jBp-5D-fy7">
+            <objects>
+                <tableViewController storyboardIdentifier="beritaKategori" id="lCK-JH-RJJ" customClass="BeritaKategoriTableViewController" customModule="FunstripBali" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dK3-bI-ycV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBeritaKategori" rowHeight="141" id="Sjg-T3-c0J" customClass="BeritaKategoriTableViewCell" customModule="FunstripBali" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="141"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sjg-T3-c0J" id="kwU-aa-CPt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frk-4R-7G3">
+                                            <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="tPW-QL-1d8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gC-2w-dIy">
+                                            <rect key="frame" x="8" y="37" width="359" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="0RN-9x-OzW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHG-xS-C4g">
+                                            <rect key="frame" x="8" y="66" width="359" height="67"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="67" id="RcV-1Z-Ezl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1gC-2w-dIy" firstAttribute="trailing" secondItem="kwU-aa-CPt" secondAttribute="trailingMargin" id="4Gl-We-d0M"/>
+                                        <constraint firstItem="1gC-2w-dIy" firstAttribute="top" secondItem="Frk-4R-7G3" secondAttribute="bottom" constant="8" id="Ej3-bb-46e"/>
+                                        <constraint firstItem="1gC-2w-dIy" firstAttribute="leading" secondItem="kwU-aa-CPt" secondAttribute="leadingMargin" id="Jwv-CJ-BYe"/>
+                                        <constraint firstItem="qHG-xS-C4g" firstAttribute="top" secondItem="1gC-2w-dIy" secondAttribute="bottom" constant="12" id="QIs-LS-i0i"/>
+                                        <constraint firstAttribute="bottom" secondItem="qHG-xS-C4g" secondAttribute="bottom" constant="7.5" id="RT4-xP-P87"/>
+                                        <constraint firstItem="Frk-4R-7G3" firstAttribute="leading" secondItem="kwU-aa-CPt" secondAttribute="leadingMargin" id="Uqv-XY-ymh"/>
+                                        <constraint firstItem="qHG-xS-C4g" firstAttribute="top" secondItem="1gC-2w-dIy" secondAttribute="bottom" constant="12" id="YaX-SA-s5U"/>
+                                        <constraint firstAttribute="trailing" secondItem="qHG-xS-C4g" secondAttribute="trailing" constant="8" id="jop-Fv-0Hw"/>
+                                        <constraint firstItem="Frk-4R-7G3" firstAttribute="top" secondItem="kwU-aa-CPt" secondAttribute="topMargin" id="lAh-LR-4Ga"/>
+                                        <constraint firstItem="Frk-4R-7G3" firstAttribute="trailing" secondItem="kwU-aa-CPt" secondAttribute="trailingMargin" id="n2b-0G-L0u"/>
+                                        <constraint firstItem="qHG-xS-C4g" firstAttribute="leading" secondItem="kwU-aa-CPt" secondAttribute="leading" constant="8" id="rV6-8r-L30"/>
+                                        <constraint firstItem="1gC-2w-dIy" firstAttribute="top" secondItem="Frk-4R-7G3" secondAttribute="bottom" constant="8" id="yqa-IT-WNI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelIsi" destination="qHG-xS-C4g" id="MCS-iC-2km"/>
+                                    <outlet property="labelJudul" destination="Frk-4R-7G3" id="5qZ-Jy-PfC"/>
+                                    <outlet property="labelKategori" destination="1gC-2w-dIy" id="BKH-mb-ejz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lCK-JH-RJJ" id="n7c-Va-knd"/>
+                            <outlet property="delegate" destination="lCK-JH-RJJ" id="NX1-nQ-w2z"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="mSm-1f-iXo" kind="modal" identifier="passDetail" id="3Pd-1g-vTC"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7c-Af-FMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.8000000000002" y="329.68515742128938"/>
+        </scene>
+        <!--Isi Detail View Controller-->
+        <scene sceneID="1ir-2i-jnY">
+            <objects>
+                <viewController id="mSm-1f-iXo" customClass="IsiDetailViewController" customModule="FunstripBali" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rf3-6p-jX5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back50" translatesAutoresizingMaskIntoConstraints="NO" id="L0X-Pv-yVl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jp8-ic-egV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.58011931179999998" green="0.64637279510000001" blue="0.70365017649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Funstrip News" id="F7Z-Dv-S1A">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="GI2-4l-QXK">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="49e-Tb-3d3" kind="modal" id="CAt-ee-XKR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7f-Ed-K2d">
+                                <rect key="frame" x="16" y="117" width="343" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EMK-Nk-Bge">
+                                <rect key="frame" x="16" y="229" width="343" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zba-8k-C3f">
+                                <rect key="frame" x="16" y="207" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dOe-Ny-5zH"/>
+                    </view>
+                    <connections>
+                        <outlet property="isiText" destination="EMK-Nk-Bge" id="0Xt-zE-t2s"/>
+                        <outlet property="judulLabel" destination="e7f-Ed-K2d" id="Fy8-4f-cz0"/>
+                        <outlet property="kategoriLabel" destination="zba-8k-C3f" id="GTw-JD-mpc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5HU-Mu-rJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2850" y="330"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uHp-6h-mWV" kind="relationship" relationship="viewControllers" id="EIh-4J-DoG"/>
+                        <segue destination="ZsZ-MX-gnD" kind="relationship" relationship="viewControllers" id="7NG-cX-c8W"/>
+                        <segue destination="Ixv-Jp-dNg" kind="relationship" relationship="viewControllers" id="Fco-22-vIH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Funstrip Home-->
+        <scene sceneID="SkV-p4-8be">
+            <objects>
+                <tableViewController id="Xht-27-mmq" customClass="HomeMenuTableViewController" customModule="FunstripBali" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nw8-rb-4Rj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellHome" rowHeight="78" id="g04-BI-0Zh" customClass="HomeMenuTableViewCell" customModule="FunstripBali" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g04-BI-0Zh" id="vNG-D4-wGY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENz-d9-2Pa">
+                                            <rect key="frame" x="8" y="0.0" width="359" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="phZ-Jo-IOE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biq-T6-HZI">
+                                            <rect key="frame" x="8" y="56" width="359" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="oMM-bN-34J"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="biq-T6-HZI" firstAttribute="top" secondItem="ENz-d9-2Pa" secondAttribute="bottom" constant="4" id="CVO-s2-B3r"/>
+                                        <constraint firstItem="ENz-d9-2Pa" firstAttribute="leading" secondItem="vNG-D4-wGY" secondAttribute="leading" constant="8" id="HJF-W0-POj"/>
+                                        <constraint firstAttribute="trailing" secondItem="biq-T6-HZI" secondAttribute="trailing" constant="8" id="TTT-0K-eL0"/>
+                                        <constraint firstAttribute="trailing" secondItem="ENz-d9-2Pa" secondAttribute="trailing" constant="8" id="WQ1-Ca-HE7"/>
+                                        <constraint firstItem="biq-T6-HZI" firstAttribute="leading" secondItem="vNG-D4-wGY" secondAttribute="leading" constant="8" id="aim-uU-ieH"/>
+                                        <constraint firstItem="ENz-d9-2Pa" firstAttribute="top" secondItem="vNG-D4-wGY" secondAttribute="top" id="pcW-5d-VNS"/>
+                                        <constraint firstItem="biq-T6-HZI" firstAttribute="top" secondItem="ENz-d9-2Pa" secondAttribute="bottom" constant="4" id="qtN-4W-VtQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="biq-T6-HZI" secondAttribute="bottom" constant="5.5" id="tKp-NO-iO0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="judulLabel" destination="ENz-d9-2Pa" id="DvE-y0-0m3"/>
+                                    <outlet property="kategoriLabel" destination="biq-T6-HZI" id="1q0-Mx-MCA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xht-27-mmq" id="BOo-Qd-i6j"/>
+                            <outlet property="delegate" destination="Xht-27-mmq" id="4e1-lQ-YtY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Funstrip Home" id="utn-hg-mCb"/>
+                    <connections>
+                        <segue destination="CgD-fc-980" kind="modal" identifier="passData" id="WUu-1N-FIF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFH-qg-EVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="-331.48425787106447"/>
+        </scene>
+        <!--Isi Berita View Controller-->
+        <scene sceneID="oLu-fG-BlJ">
+            <objects>
+                <viewController id="CgD-fc-980" customClass="IsiBeritaViewController" customModule="FunstripBali" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcB-1e-MPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back50" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-HI-WYD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSw-CN-rPC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.58011931179999998" green="0.64637279510000001" blue="0.70365017649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Funstrip News" id="Ecd-a9-X1Y">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="7EZ-uT-chv">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="49e-Tb-3d3" kind="modal" id="rLf-Is-6bz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0n-wJ-aRL">
+                                <rect key="frame" x="16" y="207" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fBc-gK-TGO">
+                                <rect key="frame" x="16" y="229" width="343" height="418"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFE-fq-9Z1">
+                                <rect key="frame" x="16" y="117" width="343" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xSx-vh-OBi"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelJudul" destination="kFE-fq-9Z1" id="ohT-aQ-2BM"/>
+                        <outlet property="labelKategori" destination="k0n-wJ-aRL" id="28d-Eh-bzb"/>
+                        <outlet property="textIsi" destination="fBc-gK-TGO" id="EiW-wv-BkO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1r-Mj-J6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.8000000000002" y="-331.48425787106447"/>
+        </scene>
+        <!--Funstrip Home-->
+        <scene sceneID="PgK-TI-sCS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uHp-6h-mWV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Funstrip Home" image="honey-moon" selectedImage="honey-moon" id="dff-Mm-qtc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="flU-WN-xbk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.58011931180953979" green="0.64637279510498047" blue="0.70365017652511597" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xht-27-mmq" kind="relationship" relationship="rootViewController" id="AOz-fO-rXS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSW-fN-TBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.79999999999995" y="-331.0344827586207"/>
+        </scene>
+        <!--Menu Kategori-->
+        <scene sceneID="UEB-RG-Kq5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZsZ-MX-gnD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu Kategori" image="category" selectedImage="category" id="0yV-Sy-ByC"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RVZ-WC-paG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.58011931179999998" green="0.64637279510000001" blue="0.70365017649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lbw-qp-zHK" kind="relationship" relationship="rootViewController" id="3Lp-Ki-Uc5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdD-ky-ONH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.20000000000005" y="330.13493253373315"/>
+        </scene>
+        <!--Menu About-->
+        <scene sceneID="Bfc-jc-xf7">
+            <objects>
+                <viewController id="aIG-1y-fef" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lhl-mA-L2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back50" translatesAutoresizingMaskIntoConstraints="NO" id="55w-zu-wop">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9o6-lY-z6R">
+                                <rect key="frame" x="16" y="81" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name : Nandhito Sam Pramudana " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lce-VC-Q7F">
+                                <rect key="frame" x="32" y="116" width="215" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class : RPL 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-hT-ll6">
+                                <rect key="frame" x="32" y="145" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hobby : Playing Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqe-5J-92v">
+                                <rect key="frame" x="32" y="174" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From : Jatiasih - Bekasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD9-r4-q70">
+                                <rect key="frame" x="32" y="209" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="D2E-sq-Nhx">
+                                <rect key="frame" x="225" y="145" width="80" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Application" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-ag-FaD">
+                                <rect key="frame" x="32" y="279" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="j6Z-dM-5sf">
+                                <rect key="frame" x="16" y="308" width="324" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Aplikasi Funstrip ini membahas 25 tempat wisata yag cocok untuk dikunjungi ketika anda berada di Bali. Dan aplikasi ini juga mempunyai desain yang cocok dengan keadaan yang berada di Bali. Didalam aplikasi ini juga terdapat kategori menu yang dimana didalamnya anda bisa memilih tempat wisata sesuai kategorinya masing - masing. Dan diaplikasi ini juga dijelaskan dimanakah letak dari objek wisata tersebut, tujuan saya membuat aplikasi ini agar membuat para pengguna mudah dalam mencari objek wisata di Bali.</string>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="wsk-Pt-5uS"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu About" id="aIM-bE-QsM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prd-w7-Lu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="1024.1379310344828"/>
+        </scene>
+        <!--Menu About-->
+        <scene sceneID="IWs-oD-spe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ixv-Jp-dNg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu About" image="care-about-environment" selectedImage="care-about-environment" id="EaP-QG-b8q"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KbS-mH-5RQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.58011931179999998" green="0.64637279510000001" blue="0.70365017649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aIG-1y-fef" kind="relationship" relationship="rootViewController" id="aBD-k9-6HQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgT-QW-rSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745.60000000000002" y="1025.4872563718143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back50" width="411" height="734"/>
+        <image name="Profile" width="4000" height="4000"/>
+        <image name="care-about-environment" width="32" height="32"/>
+        <image name="category" width="32" height="32"/>
+        <image name="honey-moon" width="32" height="32"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CAt-ee-XKR"/>
+    </inferredMetricsTieBreakers>
+</document>
